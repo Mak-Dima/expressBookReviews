@@ -48,7 +48,7 @@ regd_users.post("/login", (req,res) => {
 
   req.session.authorization = { tocken, username }
 
-  return res.status(200).json({message: "Success!"})
+  return res.status(200).json({username: username, password: password})
 });
 
 // Add a book review

@@ -26,13 +26,7 @@ public_users.get('/',function (req, res) {
   let promise = new Promise((resolve, reject) => {
 
     setTimeout(() => {
-
-      var booksList = []
-      for (const elem in books) {
-        booksList.push(books[elem].title)
-      }
-
-      resolve(booksList)
+      resolve(books)
     }, 3000)
 
   })
